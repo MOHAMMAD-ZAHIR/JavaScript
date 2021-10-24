@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>zahir</title>
+		<script>
+			function valid(){
+			var name =document.getElementById("name");
+			var fname = document.getElementById("fname");
+			var mname = document.getElementById("mname");
+			var phone = document.getElementById("phone");
+			if(name.value.trim()=="" || fname.value.trim()=="" || mname.value.trim()=="" || phone.value.trim()=="" ){
+				alert("NO BLANK SPACE IS ALLOWED");
+				return false;
+				}else{
+				return true;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="" method="post" onsubmit="return valid()">
+			<table>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" name="dname" id="name"></td>
+				</tr>
+				<tr>
+					<td>Father's Name:</td>
+					<td><input type="text" name="dfname" id="fname"></td>
+				</tr>
+				<tr>
+					<td>Mother's Name:</td>
+					<td><input type="text" name="dmname" id="mname"></td>
+				</tr>
+				<tr>
+					<td>Sex:</td>
+					<td>
+						<label for="sex"></label>
+						<select name="dsex" id="sex">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Transgender">Transgender</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Phone:</td>
+					<td><input type="number" name="dphone" id="phone"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="submit"></td>
+				</tr>
+				
+			</table>
+		</form>
+	</body>
+</html>
